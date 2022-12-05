@@ -1,0 +1,30 @@
+<body>
+<h2 >Enter your ID </h2>
+<input class="input" [(ngModel)] = 'movId'>
+    <app-show (shows)="confirm($event)" [movId1]="movId"></app-show> 
+    
+    <!-- <div class="container"></div> -->
+<table style="width: 100px;">
+
+    <colgroup>
+        <col span="4" style="background-color:lightblue" >
+    </colgroup>
+    <tr>
+        <th>Movieid</th>
+        <th>NameMovie</th>
+        <th>TypeMovie</th>
+        <th>MoviePrice</th>
+    </tr>  
+    
+    <tr>
+    <td>{{mID.Movieid}}</td>
+    <td>{{mID.NameMovie}}</td>
+    <td>{{mID.TypeMovie}}</td>
+    <td>{{mID.MoviePrice}}</td>
+    </tr>
+</table>
+</body>    
+    <!-- ส่ง movieId ไปให้ที่ movId ตัวลูก -->
+
+
+
